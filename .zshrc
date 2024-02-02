@@ -8,17 +8,18 @@ fi
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias vim=nvim
 
 sdxl() {
     swift run --package-path ~/Pictures/ai/ml-stable-diffusion StableDiffusionSample "$*" --resource-path ~/Pictures/ai/coreml-stable-diffusion-xl-base-with-refiner/compiled --output-path ~/Pictures/ai --compute-units cpuAndGPU --xl
-    imgcat ~/Pictures/ai/"$(ls -Art1 ~/Pictures/ai | tail -n 1)"
+    /Users/mustafa/.iterm2/imgcat ~/Pictures/ai/"$(ls -Art1 ~/Pictures/ai | tail -n 1)"
 }
 
+alias bot="ollama run starling-lm"
 pplx() { open -a Safari "https://www.perplexity.ai/search?q=$*" }
+google() { open -a Safari "https://www.google.com/search?q=$*" }
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
