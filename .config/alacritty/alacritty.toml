@@ -30,7 +30,6 @@ cyan    = '#8ec07c'
 white   = '#ebdbb2'
 
 [font]
-
 normal = { family = "SauceCodePro Nerd Font", style = "Regular"}
 bold = { family = "SauceCodePro Nerd Font", style = "Bold" }
 italic = { family = "SauceCodePro Nerd Font", style = "Italic" }
