@@ -35,3 +35,7 @@ bold = { family = "SauceCodePro Nerd Font", style = "Bold" }
 italic = { family = "SauceCodePro Nerd Font", style = "Italic" }
 bold_italic = { family = "SauceCodePro Nerd Font", style = "Bold Italic" }
 size = 14
+
+
+[shell]
+program = "/opt/homebrew/bin/tmux"
