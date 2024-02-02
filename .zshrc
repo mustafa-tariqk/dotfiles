@@ -14,7 +14,7 @@ alias vim=nvim
 
 sdxl() {
     swift run --package-path ~/Pictures/ai/ml-stable-diffusion StableDiffusionSample "$*" --resource-path ~/Pictures/ai/coreml-stable-diffusion-xl-base-with-refiner/compiled --output-path ~/Pictures/ai --compute-units cpuAndGPU --xl
-    /Users/mustafa/.iterm2/imgcat ~/Pictures/ai/"$(ls -Art1 ~/Pictures/ai | tail -n 1)"
+    open ~/Pictures/ai/"$(ls -Art1 ~/Pictures/ai | tail -n 1)"
 }
 
 alias bot="ollama run starling-lm"
