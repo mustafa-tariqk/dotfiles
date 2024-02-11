@@ -40,4 +40,4 @@ size = 14
 program = "/opt/homebrew/bin/tmux"
 
 [window]
-decorations = "None"
+decorations = "Full"
